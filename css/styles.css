@@ -1,0 +1,25 @@
+body {
+    background-color: #F2F4F3;
+
+}
+
+header {
+    background-color: #5E503F;
+}
+
+header img {
+    width: 100px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+  
