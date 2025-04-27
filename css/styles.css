@@ -23,7 +23,7 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin-right: 1rem;
 }
 
@@ -51,18 +51,24 @@ html, body {
     background-color: #F2F4F3;
     max-width: 70%;
     margin: 0 auto;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 main img {
     max-width: 100%;
-    max-height: 30%;
+    margin-bottom: 2rem;
 }
 
 h1 {
     font-family: 'Gabarito', sans-serif;
     font-size: 48px;
     text-align: center;
+    color:#0A0908;
+}
+
+h2 {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 34px;
     color:#0A0908;
 }
 
@@ -75,7 +81,7 @@ p {
 
 .flex-main-2 {
     background-color: #5E503F;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,8 +115,8 @@ p {
 
 .button:hover,
 .button:focus {
-    background-color: #22333b89;
-    text-decoration: underline;
+    background-color: #F2F4F3;
+    color: #22333B;
 }
 
 footer {
@@ -121,7 +127,7 @@ footer {
     padding-bottom: 1rem;
 }
 
-footer a {
+footer p {
     display: block;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
@@ -130,14 +136,9 @@ footer a {
     text-align: center;
 }
 
-footer a:hover,
-footer a:focus {
-    text-decoration: underline;
-}
-
-footer p {
+footer h3 {
     font-family:'Gabarito', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color:#F2F4F3;
 }
 
@@ -236,5 +237,14 @@ input, textarea {
 
     .input-group {
         flex: 1;
+    }
+
+    main img {
+        display: block;
+        width: 100vw;
+        height: 70vh;
+        object-fit: cover;
+        object-position:center;
+        margin-bottom: 2rem;
     }
 }
