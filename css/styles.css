@@ -307,6 +307,8 @@ input, textarea {
 
 /* ========== Contact Page New Additions ========== */
 
+/* ========== Contact Page New Additions ========== */
+
 /* Hero Section */
 .hero-section {
     background: url('images/coffee-hero.jpg') center/cover no-repeat;
@@ -380,10 +382,11 @@ input, textarea {
     font-family: 'Gabarito', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #F2F4F3;
 }
 
 .info-card p {
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
+    color: #F2F4F3;
 }
-
