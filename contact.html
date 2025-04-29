@@ -1,118 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Coffee & Brew</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Coffee & Brew</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <header> 
-    <img src="images/logo.png" alt="Coffee & Brew Logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-  <main>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Coffee & Brew Logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Hero Banner -->
-    <section class="hero-section">
-      <div class="hero-text">
-        <h1>Let's Connect</h1>
-        <p>Whether you have a question, want to leave feedback, or just want to say hello — we'd love to hear from you.</p>
-      </div>
-    </section>
+    <main>
+      <!-- Hero Banner -->
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>Let's Connect</h1>
+          <p>
+            Whether you have a question, want to leave feedback, or just want to
+            say hello — we'd love to hear from you.
+          </p>
+        </div>
+      </section>
 
-    <!-- Contact Form -->
-    <section class="contact-section">
-      <h2>Contact Us</h2>
+      <!-- Contact Form -->
+      <section class="contact-section">
+        <h2>Contact Us</h2>
 
-      <form class="contact-form" action="#" method="POST">
-        <div class="name-fields">
-          <div class="input-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" required>
+        <form class="contact-form" action="#" method="POST">
+          <div class="name-fields">
+            <div class="input-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="input-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
           </div>
+
           <div class="input-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
           </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </section>
+
+      <!-- Location Map -->
+      <section class="map-section">
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+          <iframe
+            title="Map showing location of Coffee & Brew"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.3283923088584!2d-79.0581636847388!3d35.91075798014726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace7b13d1c4df5%3A0xb0621f5b75b72a12!2s318%20W%20Franklin%20St%2C%20Chapel%20Hill%2C%20NC%2027516!5e0!3m2!1sen!2sus!4v1684460486549!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
         </div>
+      </section>
 
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+      <!-- Quick Info Panel -->
+      <section class="info-panel">
+        <div class="info-card">
+          <h3>Visit Us</h3>
+          <p>318 W Franklin St<br />Chapel Hill, NC 27516</p>
         </div>
-
-        <div class="input-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="info-card">
+          <h3>Call Us</h3>
+          <p>(984) 000-0000</p>
         </div>
+        <div class="info-card">
+          <h3>Email Us</h3>
+          <p>info@coffeebrew.com</p>
+        </div>
+        <div class="info-card">
+          <h3>Opening Hours</h3>
+          <p>Mon-Sat: 7am - 8pm<br />Sun: 8am - 6pm</p>
+        </div>
+      </section>
+    </main>
 
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </section>
-
-    <!-- Location Map -->
-    <section class="map-section">
-      <h2>Find Us Here</h2>
-      <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.3283923088584!2d-79.0581636847388!3d35.91075798014726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace7b13d1c4df5%3A0xb0621f5b75b72a12!2s318%20W%20Franklin%20St%2C%20Chapel%20Hill%2C%20NC%2027516!5e0!3m2!1sen!2sus!4v1684460486549!5m2!1sen!2sus" 
-          width="100%" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-address">
+          <h3>Address</h3>
+          <p>318 W Franklin St<br />Chapel Hill, NC 27516</p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>(984) 000-0000<br />info@coffeebrew.com</p>
+        </div>
       </div>
-    </section>
-
-    <!-- Quick Info Panel -->
-    <section class="info-panel">
-      <div class="info-card">
-        <h3>Visit Us</h3>
-        <p>318 W Franklin St<br>Chapel Hill, NC 27516</p>
-      </div>
-      <div class="info-card">
-        <h3>Call Us</h3>
-        <p>(984) 000-0000</p>
-      </div>
-      <div class="info-card">
-        <h3>Email Us</h3>
-        <p>info@coffeebrew.com</p>
-      </div>
-      <div class="info-card">
-        <h3>Opening Hours</h3>
-        <p>Mon-Sat: 7am - 8pm<br>Sun: 8am - 6pm</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-address">
-        <h3>Address</h3>
-        <p>318 W Franklin St<br>Chapel Hill, NC 27516</p>
-      </div>
-      <div class="footer-contact">
-        <h3>Contact</h3>
-        <p>(984) 000-0000<br>info@coffeebrew.com</p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
