@@ -17,10 +17,16 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#">Menu</a>
+            <div class="dropdown-content">
+              <a href="featured-menu.html">Featured Items</a>
+              <a href="full-menu.html">Full Menu</a>
+            </div>
+          </li>
         </ul>
-      </nav>
+      </nav>      
     </header>
 
     <main>
@@ -32,6 +38,7 @@
         </p>
 
         <div class="menu-grid">
+          <!-- Original 4 Items -->
           <div class="menu-item">
             <img
               src="images/menu/latte.jpg"
@@ -73,7 +80,58 @@
               Slow-steeped for 18 hours to bring out rich, smooth flavors.
             </p>
           </div>
+
+          <!-- 4 New Featured Items -->
+          <div class="menu-item">
+            <img
+              src="images/menu/matcha.jpg"
+              alt="Matcha Latte"
+            />
+            <h2>Matcha Latte</h2>
+            <p class="color-white">
+              Earthy and vibrant ceremonial-grade matcha blended with steamed milk.
+            </p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="images/menu/butterfly-pea.jpg"
+              alt="Butterfly Pea Flower Tea"
+            />
+            <h2>Butterfly Pea Flower Tea</h2>
+            <p class="color-white">
+              A naturally blue tea with delicate floral notes and stunning color.
+            </p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="images/menu/earl-grey.jpg"
+              alt="Earl Grey Tea"
+            />
+            <h2>Earl Grey Tea</h2>
+            <p class="color-white">
+              Classic black tea infused with bergamot for a bright, citrusy aroma.
+            </p>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="images/menu/apple-cider.jpg"
+              alt="Hot Apple Cider"
+            />
+            <h2>Hot Apple Cider</h2>
+            <p class="color-white">
+              Sweet and spiced with cinnamon, perfect for cozy afternoons.
+            </p>
+          </div>
         </div>
+
+        <!-- View Full Menu Button -->
+        <div class="full-menu-btn">
+          <a href="full-menu.html" class="button">View Full Menu</a>
+        </div>
+
       </section>
     </main>
 

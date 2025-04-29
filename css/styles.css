@@ -24,6 +24,7 @@ nav ul {
     display: flex;
     gap: 3rem;
     margin-right: 1rem;
+    position: relative;
 }
 
 nav a {
@@ -51,9 +52,8 @@ html, body {
     background-color: #F2F4F3;
     max-width: 70%;
     margin: 0 auto;
-    padding: 2rem 1rem 2rem 1rem; /* <--- Added side padding */
+    padding: 2rem 1rem 2rem 1rem; /* Side padding added */
 }
-
 
 main img {
     max-width: 100%;
@@ -109,7 +109,7 @@ p {
     background-color: #22333B;
     color: #F2F4F3;
     text-decoration: none;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
 }
 
@@ -142,6 +142,7 @@ footer h3 {
     color: #F2F4F3;
 }
 
+/* Contact Page Styles */
 .contact-section {
     padding: 2rem;
     text-align: center;
@@ -221,7 +222,7 @@ input, textarea {
     justify-content: center;
 }
 
-/* ========== Menu Page Styles ========== */
+/* Menu Page Styles */
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -352,10 +353,12 @@ input, textarea {
     color: #F2F4F3;
 }
 
+/* Center Alignment */
 #center-align {
     text-align: center;
 }
 
+/* Responsive Layout */
 @media (min-width: 768px) {
     .name-fields {
         flex-direction: row;
@@ -378,4 +381,87 @@ input, textarea {
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* Dropdown Menu for Navbar */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* right under the Menu link */
+    right: 0; /* align to the right side neatly */
+    background-color: #5E503F;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #F2F4F3;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    background-color: #F2F4F3;
+    color: #5E503F;
+    border-radius: 0.3rem;
+}
+
+/* Show dropdown when hovering the entire parent <li> */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+
+/* Full Menu Page Styles */
+.full-menu-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.full-menu-section h1 {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0A0908;
+}
+
+.full-menu-category {
+    margin-bottom: 3rem;
+}
+
+.full-menu-category h2 {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 32px;
+    color: #5E503F;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #5E503F;
+    display: inline-block;
+}
+
+.full-menu-category p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #0A0908;
+    line-height: 1.6;
+}
+
+/* Full Menu Button Center */
+.full-menu-btn {
+    margin-top: 2rem;
+    margin-bottom: 4rem; /* <-- Add margin-bottom */
+    text-align: center;
 }
